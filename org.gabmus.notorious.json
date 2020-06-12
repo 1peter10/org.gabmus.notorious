@@ -27,6 +27,20 @@
             ]
         },
         {
+            "name": "gtksourceview-git",
+            "buildsystem": "meson",
+            "config-opts": [
+                "--buildtype=release"
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "url": "https://gitlab.gnome.org/GNOME/gtksourceview",
+                    "commit": "02be7aad3726bb4de1efb2bca541601e1021b66f"
+                }
+            ]
+        },
+        {
             "name": "otf-source-code-pro",
             "buildsystem": "simple",
             "sources": [
@@ -37,31 +51,31 @@
                 }
             ],
             "build-commands": [
-            	"mkdir -p /app/share/fonts/",
-            	"install -d /app/share/fonts/adobe-source-code-pro/",
-            	"install -t /app/share/fonts/adobe-source-code-pro/ -m644 OTF/*.otf",
-            	"fc-cache -fs"
+                "mkdir -p /app/share/fonts/",
+                "install -d /app/share/fonts/adobe-source-code-pro/",
+                "install -t /app/share/fonts/adobe-source-code-pro/ -m644 OTF/*.otf",
+                "fc-cache -fs"
             ]
         },
         {
             "name": "gnome-builder-gtksourceview4-colorschemes",
             "buildsystem": "simple",
             "sources": [
-            	{
-            	    "type": "file",
-            	    "url": "https://gitlab.gnome.org/GNOME/gnome-builder/-/raw/d73cecfb8bf4b40df32d7f81607e5b24a3536bb4/data/style-schemes/builder-dark.style-scheme.xml",
-            	    "sha256": "b47170fffa76b438a6b4ee25007005062366a76249c92dc20250ade8d18783f9"
-            	},
-            	{
-            	    "type": "file",
-            	    "url": "https://gitlab.gnome.org/GNOME/gnome-builder/-/raw/d73cecfb8bf4b40df32d7f81607e5b24a3536bb4/data/style-schemes/builder.style-scheme.xml",
-            	    "sha256": "d10c9176746c86f8d605302f348f4cda71c0b0ffac323da565f73e638d3c351f"
-            	}
+                {
+                    "type": "file",
+                    "url": "https://gitlab.gnome.org/GNOME/gnome-builder/-/raw/d73cecfb8bf4b40df32d7f81607e5b24a3536bb4/data/style-schemes/builder-dark.style-scheme.xml",
+                    "sha256": "b47170fffa76b438a6b4ee25007005062366a76249c92dc20250ade8d18783f9"
+                },
+                {
+                    "type": "file",
+                    "url": "https://gitlab.gnome.org/GNOME/gnome-builder/-/raw/d73cecfb8bf4b40df32d7f81607e5b24a3536bb4/data/style-schemes/builder.style-scheme.xml",
+                    "sha256": "d10c9176746c86f8d605302f348f4cda71c0b0ffac323da565f73e638d3c351f"
+                }
             ],
             "build-commands": [
-            	"mkdir -p /app/share/gtksourceview-4/styles/",
-            	"install builder.style-scheme.xml /app/share/gtksourceview-4/styles/",
-            	"install builder-dark.style-scheme.xml /app/share/gtksourceview-4/styles/"
+                "mkdir -p /app/share/gtksourceview-4/styles/",
+                "install builder.style-scheme.xml /app/share/gtksourceview-4/styles/",
+                "install builder-dark.style-scheme.xml /app/share/gtksourceview-4/styles/"
             ]
         },
         {
@@ -75,7 +89,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GabMus/notorious",
-                    "tag": "0.1"
+                    "tag": "0.2"
                 }
             ]
         }
