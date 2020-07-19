@@ -21,8 +21,8 @@
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://source.puri.sm/Librem5/libhandy",
-                    "tag": "v0.0.13"
+                    "url": "https://gitlab.gnome.org/GNOME/libhandy",
+                    "tag": "0.83.0"
                 }
             ]
         },
@@ -89,7 +89,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GabMus/notorious",
-                    "tag": "0.2"
+                    "tag": "0.3"
                 }
             ]
         }
