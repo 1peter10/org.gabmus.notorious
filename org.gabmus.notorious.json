@@ -2,7 +2,7 @@
     "app-id": "org.gabmus.notorious",
     "command": "notorious",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "3.38",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
         "--device=dri",
@@ -22,7 +22,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GNOME/libhandy",
-                    "tag": "0.83.0"
+                    "tag": "1.0.0"
                 }
             ]
         },
@@ -89,7 +89,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GabMus/notorious",
-                    "tag": "0.3"
+                    "tag": "0.4"
                 }
             ]
         }
