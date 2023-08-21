@@ -62,6 +62,10 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GabMus/notorious",
                     "tag": "0.4"
+                },
+                {
+                    "type": "patch",
+                    "path": "screenshot.patch"
                 }
             ]
         }
