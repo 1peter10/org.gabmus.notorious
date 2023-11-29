@@ -2,7 +2,7 @@
     "app-id": "org.gabmus.notorious",
     "command": "notorious",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.38",
+    "runtime-version": "44",
     "sdk": "org.gnome.Sdk",
     "finish-args": [
         "--device=dri",
@@ -12,34 +12,6 @@
         "--filesystem=home:rw"
     ],
     "modules": [
-        {
-            "name": "libhandy",
-            "buildsystem": "meson",
-            "config-opts": [
-                "--buildtype=release"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/libhandy",
-                    "tag": "1.0.0"
-                }
-            ]
-        },
-        {
-            "name": "gtksourceview-git",
-            "buildsystem": "meson",
-            "config-opts": [
-                "--buildtype=release"
-            ],
-            "sources": [
-                {
-                    "type": "git",
-                    "url": "https://gitlab.gnome.org/GNOME/gtksourceview",
-                    "commit": "02be7aad3726bb4de1efb2bca541601e1021b66f"
-                }
-            ]
-        },
         {
             "name": "otf-source-code-pro",
             "buildsystem": "simple",
@@ -90,6 +62,10 @@
                     "type": "git",
                     "url": "https://gitlab.gnome.org/GabMus/notorious",
                     "tag": "0.4"
+                },
+                {
+                    "type": "patch",
+                    "path": "screenshot.patch"
                 }
             ]
         }
